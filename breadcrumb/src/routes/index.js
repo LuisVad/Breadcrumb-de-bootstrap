@@ -18,31 +18,50 @@ const routes = [
         },
         children : [
             {
-                path: '/tiendajuguetes', //Posterior a la ruta base
-                name : 'tiendajuguetes',
-                component: ()=> import('../components/tiendajuguetes.vue')
+                path: '/inicio',
+                name : 'inicio',
+                component: ()=> import('../components/Inicio.vue')
             },
             {
-                path: '/tiendadomesticos', //Posterior a la ruta base
-                name : 'tiendadomesticos',
-                component: ()=> import('../components/tiendadomesticos.vue')
+                path: '/home',
+                name : 'home',
+                component: ()=> import('../components/Home.vue')
             },
             {
-                path: '/tiendahogar', //Posterior a la ruta base
-                name : 'tiendahogar',
-                component: ()=> import('../components/tiendahogar.vue')
+                path: '/user',
+                name : 'user',
+                component: ()=> import('../components/User.vue')
             },
             {
-                path: '/electronicos', //Posterior a la ruta base
+                path: '/inicio/electronicos',
                 name : 'electronicos',
-                component: ()=> import('../components/subcomponents/electronicos.vue')
+                component: ()=> import('../components/Electronicos.vue')
             },
             {
-                path: '/cocinas', //Posterior a la ruta base
-                name : 'cocinas',
-                component: ()=> import('../components/subcomponents/cocinas.vue')
+                path: '/inicio/electronicos/videojuegos',
+                name : 'videojuegos',
+                component: ()=> import('../components/Videojuegos.vue')
             },
-
+            {
+                path: '/home/cocina',
+                name : 'cocina',
+                component: ()=> import('../components/Cocina.vue')
+            },
+            {
+                path: '/home/cocina/estufa',
+                name : 'estufa',
+                component: ()=> import('../components/Estufa.vue')
+            },
+            {
+                path: '/user/hogar',
+                name : 'hogar',
+                component: ()=> import('../components/Hogar.vue')
+            },
+            {
+                path: '/user/hogar/detergentes',
+                name : 'detergentes',
+                component: ()=> import('../components/Detergentes.vue')
+            }
         ]
     },
 ]
