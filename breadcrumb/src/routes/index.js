@@ -10,6 +10,15 @@ const routes = [
         redirect: 'inicio'
     },
     {
+        path:'*',
+        component:()=> import('../views/ErrorPages/Error404.vue')
+    },
+    {
+        path: '/inicio',
+        name : 'inicio',
+        component: ()=> import('../components/Inicio.vue')
+    },
+    {
         path: '/',
         component: {
             render(c){
@@ -18,9 +27,9 @@ const routes = [
         },
         children : [
             {
-                path: '/inicio',
-                name : 'inicio',
-                component: ()=> import('../components/Inicio.vue')
+                path: '/formulario',
+                name:'formulario',
+                component: () => import('../components/Formulario.vue')
             },
             {
                 path: '/home',
@@ -61,7 +70,8 @@ const routes = [
                 path: '/user/hogar/detergentes',
                 name : 'detergentes',
                 component: ()=> import('../components/Detergentes.vue')
-            }
+            },
+
         ]
     },
 ]

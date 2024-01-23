@@ -54,7 +54,7 @@
             </b-nav-item>
           
             <b-nav-item 
-              ><b-link :to="{ name: 'home' }">Teinda de Electrodomesticos</b-link>
+              ><b-link :to="{ name: 'home' }">Tienda de Electrodomesticos</b-link>
             </b-nav-item>
           
             <b-nav-item 
