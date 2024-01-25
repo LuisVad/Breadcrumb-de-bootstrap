@@ -14,6 +14,11 @@ const routes = [
         component:()=> import('../views/ErrorPages/Error404.vue')
     },
     {
+        path: '/paginacion',
+        name: 'paginacion',
+        component:()=> import('../components/Persona.vue')
+    },
+    {
         path: '/inicio',
         name : 'inicio',
         component: ()=> import('../components/Inicio.vue')
